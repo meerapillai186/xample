@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+     <head>
+      <h1>calculations</h1>     
+     </head>
+     <body>
+         Radius : <input type="number" id="fnum" value="2">
+         
+         <br><br>
+         <button onclick="area()"> Area</button>&nbsp
+         <button onclick="peri()"> Perimeter</button>
+         <br><br>
+         <p id="demo"></p>
+         <script> 
+             function area() {
+                 var r=Number(document.getElementById("fnum").value);
+                 var a = 3.14*r*r;
+                 document.getElementById("demo").innerHTML = "The Area is " + a;
+                 }
+             function peri() {
+                 var r=Number(document.getElementById("fnum").value);
+                 var p = 2*3.14*r;
+                 document.getElementById("demo").innerHTML = "The Perimeter is " + p;
+                 }
+               
+         </script>
+            
+
+     </body>
+</html>
